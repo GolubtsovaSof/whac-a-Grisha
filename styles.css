@@ -2,6 +2,9 @@
     padding:0;
     margin:0;
 }
+#preload {
+    display: none;
+}
 .grid{
     display: block;
     width: fit-content;
