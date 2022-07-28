@@ -24,7 +24,6 @@ h2{
     font-size: 3vh;
 }
 .mole{
-    background-color: black;
     background-size: contain;
 }
 @media screen and (max-width: 650px){
