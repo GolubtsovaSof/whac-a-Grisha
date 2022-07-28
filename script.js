@@ -1,20 +1,10 @@
-function preloadImage(url)
-{
-    var img=new Image();
-    img.src=url;
-}
-
-for(let i=0; i<30; i++){
-    preloadImage('./img/'+i+'.jpg')
-}
-
 const squares = document.querySelectorAll('.square')
 const mole = document.querySelector('.mole')
 const timeLeft = document.querySelector('#time-left')
 const score = document.querySelector('#score')
 
 let result = 0
-let currentTime = 10
+let currentTime = 30
 let hitPosition 
 let timerId = null
 
@@ -59,7 +49,7 @@ function countDown(){
         clearInterval(countDowntimerId)
         clearInterval(timerId)
         timeLeft.textContent = '0'
-        alert('Игра закончена! Ты поймал ' + result +' Гриш из 20 возможных!')
+        alert('Игра закончена! Ты поймал ' + result +' Гриш из 60 возможных!')
     }
 }
 
